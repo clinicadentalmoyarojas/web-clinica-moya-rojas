@@ -78,6 +78,8 @@ h3 { font-size: 27px; line-height: 1.2; }
 .topbar { background: var(--antracita); color: #E9E2D5; font-size: 13px; letter-spacing: .04em; }
 .topbar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 32px; padding-top: 9px; padding-bottom: 9px; }
 .topbar a { color: #E9E2D5; text-decoration: none; }
+.topbar a b { font-weight: 500; color: #fff; border-bottom: 1px solid var(--ocre); }
+.topbar a:hover b { color: var(--ocre); }
 .header { position: sticky; top: 0; z-index: 20; background: rgba(251, 249, 245, .96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--linea); }
 .header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 16px; padding-bottom: 16px; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--antracita); }
