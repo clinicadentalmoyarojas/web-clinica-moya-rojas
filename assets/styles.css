@@ -92,6 +92,9 @@ h3 { font-size: 27px; line-height: 1.2; }
 .nav a { color: var(--antracita); text-decoration: none; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--ocre-osc); }
 .nav .btn { min-height: 44px; padding: 0 22px; color: var(--blanco); }
+.nav .btn:hover { color: var(--blanco); }
+.brand__name, .nav a, .nav .btn { white-space: nowrap; }
+[id] { scroll-margin-top: 96px; }
 .nav-toggle { display: none; background: none; border: 1px solid var(--linea); min-width: 46px; min-height: 46px; cursor: pointer; color: var(--antracita); }
 .nav-toggle svg { width: 22px; height: 22px; }
 
@@ -233,6 +236,14 @@ h3 { font-size: 27px; line-height: 1.2; }
   .tecno { grid-template-columns: 1fr 1fr; }
   .tecno__txt { grid-column: 1 / -1; padding-left: 0; }
   .footer .wrap { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 1180px) {
+  .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
+  .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--blanco); border-bottom: 1px solid var(--linea); flex-direction: column; align-items: stretch; padding: 8px 5% 20px; gap: 0; }
+  .nav.is-open { display: flex; }
+  .nav a { padding: 14px 0; border-bottom: 1px solid var(--linea); font-size: 17px; }
+  .nav .btn { margin-top: 14px; border-bottom: 1px solid var(--antracita); }
+  .header .wrap { position: relative; }
 }
 @media (max-width: 860px) {
   .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }

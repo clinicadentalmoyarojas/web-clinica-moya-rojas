@@ -1,6 +1,6 @@
 # Web de Clínica Dental Moya Rojas
 
-Web estática (HTML + CSS) publicada en Cloudflare Pages.
+Web estática (HTML + CSS) publicada en Cloudflare (Workers, con archivos estáticos).
 
 - `index.html` – portada
 - `clinica-barrio-salamanca/` – clínica de Calle de Padilla 71
@@ -8,6 +8,6 @@ Web estática (HTML + CSS) publicada en Cloudflare Pages.
 - `aviso-legal/`, `privacidad/` – textos legales
 - `assets/` – estilos y script del menú
 - `img/` – fotografías optimizadas (WebP)
-- `_redirects`, `_headers` – configuración de Cloudflare Pages
+- `_redirects`, `_headers` – configuración de Cloudflare (Workers, con archivos estáticos)
 
-Cloudflare Pages: sin comando de compilación; directorio de salida `/`.
+Cloudflare (Workers, con archivos estáticos): sin comando de compilación; directorio de salida `/`.
